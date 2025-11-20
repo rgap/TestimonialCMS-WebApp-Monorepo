@@ -16,4 +16,6 @@ Guidelines for contributions to the project.
 - Each branch must be named according to the feature or bug it is addressing, eg: feat/add-new-feature, fix/fix-bug, chore/update-dependencies, etc.
 
 **Order of branches:**
-`main` <- `develop` <- `frontend` | `backend` <- `feat/add-new-feature` | `fix/fix-bug` | `chore/update-dependencies`
+`main` <- `develop` <- `frontend` | `backend` <- `feat/add-new-feature` | `fix/fix-bug` | `chore/update-dependencies` 
+
+eg: `git checkout -b scope/<scope-info`
