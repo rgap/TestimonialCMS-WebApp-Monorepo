@@ -16,6 +16,14 @@ Guidelines for contributions to the project.
 - Each branch must be named according to the feature or bug it is addressing, eg: feat/add-new-feature, fix/fix-bug, chore/update-dependencies, etc.
 
 **Order of branches:**
-`main` <- `develop` <- `frontend` | `backend` <- `feat/add-new-feature` | `fix/fix-bug` | `chore/update-dependencies` 
+`main` <- `develop` <- `frontend` | `backend` <- `feat/add-new-feature` | `fix/fix-bug` | `chore/update-dependencies`
 
 eg: `git checkout -b scope/scope-info`
+
+## FRONTEND & STYLES
+
+- Use Tailwind CSS V4 with utility classes.
+- Use Shadcn UI for components.
+- Respect the design system and utility classes, priorize `globals.css` over local styles.
+
+This ensures a consistent and maintainable codebase with light/dark mode support.
