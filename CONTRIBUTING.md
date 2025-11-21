@@ -1,7 +1,7 @@
 
 # CONTRIBUTIONS
 
-Guidelines for contributions to the project.
+Guidelines for contribuiting to the project.
 
 ## COMMITS
 
@@ -24,6 +24,18 @@ eg: `git checkout -b scope/scope-info`
 
 - Use Tailwind CSS V4 with utility classes.
 - Use Shadcn UI for components.
-- Respect the design system and utility classes, priorize `globals.css` over local styles.
+- Priorize `globals.css` over local styles, this allows for mantainability.
 
-This ensures a consistent and maintainable codebase with light/dark mode support.
+This ensures a consistent and maintainable codebase with light/dark mode support (next-theme).
+
+**See:**
+
+- [Shadcn UI](https://ui.shadcn.com/docs/) (specially the theming section)
+- [Tailwind CSS](https://tailwindcss.com/docs)
+
+### Implementing new components
+
+- Use existing blocks/components whenever possible to make the development faster, they can be modified later.
+- use shadcn's official commands, eg `bunx --bun shadcn@latest add button`
+- use existing components may be used as reference to make new ones.
+- Avoid using other component libraries, if in doubt ask the team.
