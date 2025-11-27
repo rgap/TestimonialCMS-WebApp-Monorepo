@@ -7,10 +7,15 @@ import { Button } from "@/components/ui/button";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "@/components/ui/mode-toggle";
 
+export async function getServerSideProps() {
+  if (process.env.NODE_ENV !== "development") {
+    return { notFound: true };
+  }
+  return { props: {} };
+}
+
 // components demo page
 export default function ComponentsDemoPage() {
-  if (process.env.NODE_ENV !== "development") return notFound();
-
   return (
     <ThemeProvider
       attribute="class"
