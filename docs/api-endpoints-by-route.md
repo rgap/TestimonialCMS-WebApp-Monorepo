@@ -1,10 +1,13 @@
-# Endpoints por Ruta
+# <span style="color:#e67e22">Endpoints por Ruta</span>
 
 Este documento lista todas las rutas de la aplicación, las páginas correspondientes y los endpoints a los que se hacen consultas desde cada página.
 
+**Leyenda métodos HTTP:**  
+<span style="color:#27ae60">● GET</span> &nbsp; <span style="color:#2980b9">● POST</span> &nbsp; <span style="color:#f39c12">● PUT</span> &nbsp; <span style="color:#e74c3c">● DELETE</span>
+
 ---
 
-## Autenticación
+## 🔐 <span style="color:#9b59b6">Autenticación</span>
 
 ### `/login`
 
@@ -13,15 +16,15 @@ Este documento lista todas las rutas de la aplicación, las páginas correspondi
 
 **Endpoints:**
 
-- `POST /auth/signup` - Crear cuentas de prueba (opcional)
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/auth/signup`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/auth/signup`
-- `POST /auth/login` (Supabase Auth) - Iniciar sesión
-  - **URL Completa:** `https://{projectId}.supabase.co/auth/v1/token?grant_type=password`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/auth/v1/token?grant_type=password`
-- `GET /auth/user` - Obtener datos del usuario (desde AuthContext)
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/auth/user`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/auth/user`
+- <span style="color:#2980b9">POST</span> `/auth/signup` - Crear cuentas de prueba (opcional)
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/auth/signup`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/auth/signup`
+- <span style="color:#2980b9">POST</span> `/auth/login` (Supabase Auth) - Iniciar sesión
+  - <span style="color:#e67e22">URL Completa:</span> `https://{projectId}.supabase.co/auth/v1/token?grant_type=password`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/auth/v1/token?grant_type=password`
+- <span style="color:#27ae60">GET</span> `/auth/user` - Obtener datos del usuario (desde AuthContext)
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/auth/user`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/auth/user`
 
 ---
 
@@ -32,15 +35,15 @@ Este documento lista todas las rutas de la aplicación, las páginas correspondi
 
 **Endpoints:**
 
-- `POST /auth/signup` - Registrar nuevo usuario
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/auth/signup`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/auth/signup`
-- `POST /auth/login` (Supabase Auth) - Auto-login después del registro
-  - **URL Completa:** `https://{projectId}.supabase.co/auth/v1/token?grant_type=password`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/auth/v1/token?grant_type=password`
-- `GET /auth/user` - Obtener datos del usuario (desde AuthContext)
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/auth/user`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/auth/user`
+- <span style="color:#2980b9">POST</span> `/auth/signup` - Registrar nuevo usuario
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/auth/signup`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/auth/signup`
+- <span style="color:#2980b9">POST</span> `/auth/login` (Supabase Auth) - Auto-login después del registro
+  - <span style="color:#e67e22">URL Completa:</span> `https://{projectId}.supabase.co/auth/v1/token?grant_type=password`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/auth/v1/token?grant_type=password`
+- <span style="color:#27ae60">GET</span> `/auth/user` - Obtener datos del usuario (desde AuthContext)
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/auth/user`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/auth/user`
 
 ---
 
@@ -51,11 +54,11 @@ Este documento lista todas las rutas de la aplicación, las páginas correspondi
 
 **Endpoints:**
 
-- Ninguno (página estática, funcionalidad no implementada)
+- <span style="color:#7f8c8d">Ninguno (página estática, funcionalidad no implementada)</span>
 
 ---
 
-## Dashboard
+## 📊 <span style="color:#2980b9">Dashboard</span>
 
 ### `/dashboard/projects`
 
@@ -64,9 +67,9 @@ Este documento lista todas las rutas de la aplicación, las páginas correspondi
 
 **Endpoints:**
 
-- `GET /projects` - Listar proyectos del usuario
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects`
+- <span style="color:#27ae60">GET</span> `/projects` - Listar proyectos del usuario
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects`
 
 ---
 
@@ -77,9 +80,9 @@ Este documento lista todas las rutas de la aplicación, las páginas correspondi
 
 **Endpoints:**
 
-- `POST /projects` - Crear nuevo proyecto
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects`
+- <span style="color:#2980b9">POST</span> `/projects` - Crear nuevo proyecto
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects`
 
 ---
 
@@ -89,7 +92,7 @@ Este documento lista todas las rutas de la aplicación, las páginas correspondi
 
 **Endpoints:**
 
-- Ninguno (redirige a `/dashboard/projects/[projectId]/testimonials`)
+- <span style="color:#7f8c8d">Ninguno (redirige a `/dashboard/projects/[projectId]/testimonials`)</span>
 
 ---
 
@@ -100,18 +103,18 @@ Este documento lista todas las rutas de la aplicación, las páginas correspondi
 
 **Endpoints:**
 
-- `GET /projects/{projectId}/testimonials` - Listar testimonios del proyecto
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/testimonials`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/testimonials`
-- `DELETE /projects/{projectId}/testimonials/{testimonialId}` - Eliminar testimonio
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/testimonials/{testimonialId}`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/testimonials/test_ejemplo123`
-- `POST /projects/{projectId}/testimonials/{testimonialId}/approve` - Aprobar/publicar testimonio
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/testimonials/{testimonialId}/approve`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/testimonials/test_ejemplo123/approve`
-- `GET /projects/{projectId}` - Obtener datos del proyecto (desde useProject hook)
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123`
+- <span style="color:#27ae60">GET</span> `/projects/{projectId}/testimonials` - Listar testimonios del proyecto
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/testimonials`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/testimonials`
+- <span style="color:#e74c3c">DELETE</span> `/projects/{projectId}/testimonials/{testimonialId}` - Eliminar testimonio
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/testimonials/{testimonialId}`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/testimonials/test_ejemplo123`
+- <span style="color:#2980b9">POST</span> `/projects/{projectId}/testimonials/{testimonialId}/approve` - Aprobar/publicar testimonio
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/testimonials/{testimonialId}/approve`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/testimonials/test_ejemplo123/approve`
+- <span style="color:#27ae60">GET</span> `/projects/{projectId}` - Obtener datos del proyecto (desde useProject hook)
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123`
 
 ---
 
@@ -122,21 +125,21 @@ Este documento lista todas las rutas de la aplicación, las páginas correspondi
 
 **Endpoints:**
 
-- `GET /projects/{projectId}/testimonials/{testimonialId}` - Obtener testimonio específico
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/testimonials/{testimonialId}`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/testimonials/test_ejemplo123`
-- `PUT /projects/{projectId}/testimonials/{testimonialId}` - Actualizar testimonio
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/testimonials/{testimonialId}`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/testimonials/test_ejemplo123`
-- `POST /projects/{projectId}/testimonials/{testimonialId}/approve` - Cambiar estado de aprobación
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/testimonials/{testimonialId}/approve`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/testimonials/test_ejemplo123/approve`
-- `POST /api/cloudinary/upload` - Subir foto de avatar (si se sube imagen)
-  - **URL Completa:** `/api/cloudinary/upload` (relativa) o `https://tu-dominio.com/api/cloudinary/upload` (absoluta)
-  - **Ejemplo:** `https://tu-dominio.com/api/cloudinary/upload`
-- `GET /projects/{projectId}` - Obtener datos del proyecto (desde useProject hook)
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123`
+- <span style="color:#27ae60">GET</span> `/projects/{projectId}/testimonials/{testimonialId}` - Obtener testimonio específico
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/testimonials/{testimonialId}`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/testimonials/test_ejemplo123`
+- <span style="color:#f39c12">PUT</span> `/projects/{projectId}/testimonials/{testimonialId}` - Actualizar testimonio
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/testimonials/{testimonialId}`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/testimonials/test_ejemplo123`
+- <span style="color:#2980b9">POST</span> `/projects/{projectId}/testimonials/{testimonialId}/approve` - Cambiar estado de aprobación
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/testimonials/{testimonialId}/approve`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/testimonials/test_ejemplo123/approve`
+- <span style="color:#2980b9">POST</span> `/api/cloudinary/upload` - Subir foto de avatar (si se sube imagen)
+  - <span style="color:#e67e22">URL Completa:</span> `/api/cloudinary/upload` (relativa) o `https://tu-dominio.com/api/cloudinary/upload` (absoluta)
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://tu-dominio.com/api/cloudinary/upload`
+- <span style="color:#27ae60">GET</span> `/projects/{projectId}` - Obtener datos del proyecto (desde useProject hook)
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123`
 
 ---
 
@@ -147,15 +150,15 @@ Este documento lista todas las rutas de la aplicación, las páginas correspondi
 
 **Endpoints:**
 
-- `GET /projects/{projectId}/capture-forms` - Listar formularios de captura
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/capture-forms`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/capture-forms`
-- `DELETE /projects/{projectId}/capture-forms/{formId}` - Eliminar formulario
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/capture-forms/{formId}`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/capture-forms/form_ejemplo123`
-- `GET /projects/{projectId}` - Obtener datos del proyecto (desde useProject hook)
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123`
+- <span style="color:#27ae60">GET</span> `/projects/{projectId}/capture-forms` - Listar formularios de captura
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/capture-forms`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/capture-forms`
+- <span style="color:#e74c3c">DELETE</span> `/projects/{projectId}/capture-forms/{formId}` - Eliminar formulario
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/capture-forms/{formId}`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/capture-forms/form_ejemplo123`
+- <span style="color:#27ae60">GET</span> `/projects/{projectId}` - Obtener datos del proyecto (desde useProject hook)
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123`
 
 ---
 
@@ -166,12 +169,12 @@ Este documento lista todas las rutas de la aplicación, las páginas correspondi
 
 **Endpoints:**
 
-- `POST /projects/{projectId}/capture-forms` - Crear nuevo formulario de captura
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/capture-forms`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/capture-forms`
-- `GET /projects/{projectId}` - Obtener datos del proyecto (desde useProject hook)
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123`
+- <span style="color:#2980b9">POST</span> `/projects/{projectId}/capture-forms` - Crear nuevo formulario de captura
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/capture-forms`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/capture-forms`
+- <span style="color:#27ae60">GET</span> `/projects/{projectId}` - Obtener datos del proyecto (desde useProject hook)
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123`
 
 ---
 
@@ -182,15 +185,15 @@ Este documento lista todas las rutas de la aplicación, las páginas correspondi
 
 **Endpoints:**
 
-- `POST /projects/{projectId}/capture-forms` - Crear formulario (si es nuevo)
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/capture-forms`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/capture-forms`
-- `PUT /projects/{projectId}/capture-forms/{formId}` - Actualizar formulario existente
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/capture-forms/{formId}`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/capture-forms/form_ejemplo123`
-- `GET /projects/{projectId}` - Obtener datos del proyecto (desde useProject hook)
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123`
+- <span style="color:#2980b9">POST</span> `/projects/{projectId}/capture-forms` - Crear formulario (si es nuevo)
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/capture-forms`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/capture-forms`
+- <span style="color:#f39c12">PUT</span> `/projects/{projectId}/capture-forms/{formId}` - Actualizar formulario existente
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/capture-forms/{formId}`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/capture-forms/form_ejemplo123`
+- <span style="color:#27ae60">GET</span> `/projects/{projectId}` - Obtener datos del proyecto (desde useProject hook)
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123`
 
 ---
 
@@ -201,18 +204,18 @@ Este documento lista todas las rutas de la aplicación, las páginas correspondi
 
 **Endpoints:**
 
-- `GET /projects/{projectId}/editors` - Listar editores del proyecto
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/editors`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/editors`
-- `POST /projects/{projectId}/editors` - Agregar editor al proyecto
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/editors`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/editors`
-- `DELETE /projects/{projectId}/editors/{editorId}` - Eliminar editor del proyecto
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/editors/{editorId}`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/editors/editor_ejemplo123`
-- `GET /projects/{projectId}` - Obtener datos del proyecto (desde useProject hook)
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123`
+- <span style="color:#27ae60">GET</span> `/projects/{projectId}/editors` - Listar editores del proyecto
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/editors`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/editors`
+- <span style="color:#2980b9">POST</span> `/projects/{projectId}/editors` - Agregar editor al proyecto
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/editors`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/editors`
+- <span style="color:#e74c3c">DELETE</span> `/projects/{projectId}/editors/{editorId}` - Eliminar editor del proyecto
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/editors/{editorId}`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/editors/editor_ejemplo123`
+- <span style="color:#27ae60">GET</span> `/projects/{projectId}` - Obtener datos del proyecto (desde useProject hook)
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123`
 
 ---
 
@@ -223,10 +226,10 @@ Este documento lista todas las rutas de la aplicación, las páginas correspondi
 
 **Endpoints:**
 
-- `GET /projects/{projectId}` - Obtener datos del proyecto (desde useProject hook)
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123`
-- Ningún otro endpoint (página informativa que muestra ejemplos de código)
+- <span style="color:#27ae60">GET</span> `/projects/{projectId}` - Obtener datos del proyecto (desde useProject hook)
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123`
+- <span style="color:#7f8c8d">Ningún otro endpoint (página informativa que muestra ejemplos de código)</span>
 
 ---
 
@@ -237,10 +240,10 @@ Este documento lista todas las rutas de la aplicación, las páginas correspondi
 
 **Endpoints:**
 
-- `GET /projects/{projectId}` - Obtener datos del proyecto (desde useProject hook)
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123`
-- Ningún otro endpoint (página informativa que genera código de embed)
+- <span style="color:#27ae60">GET</span> `/projects/{projectId}` - Obtener datos del proyecto (desde useProject hook)
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123`
+- <span style="color:#7f8c8d">Ningún otro endpoint (página informativa que genera código de embed)</span>
 
 ---
 
@@ -251,10 +254,10 @@ Este documento lista todas las rutas de la aplicación, las páginas correspondi
 
 **Endpoints:**
 
-- `GET /projects/{projectId}` - Obtener datos del proyecto (desde useProject hook)
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123`
-- Ningún otro endpoint (página de selección de tipo)
+- <span style="color:#27ae60">GET</span> `/projects/{projectId}` - Obtener datos del proyecto (desde useProject hook)
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123`
+- <span style="color:#7f8c8d">Ningún otro endpoint (página de selección de tipo)</span>
 
 ---
 
@@ -265,15 +268,15 @@ Este documento lista todas las rutas de la aplicación, las páginas correspondi
 
 **Endpoints:**
 
-- `POST /projects/{projectId}/testimonials` - Crear testimonio de texto
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/testimonials`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/testimonials`
-- `POST /api/cloudinary/upload` - Subir foto de avatar (si se sube imagen)
-  - **URL Completa:** `/api/cloudinary/upload` (relativa) o `https://tu-dominio.com/api/cloudinary/upload` (absoluta)
-  - **Ejemplo:** `https://tu-dominio.com/api/cloudinary/upload`
-- `GET /projects/{projectId}` - Obtener datos del proyecto (desde useProject hook)
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123`
+- <span style="color:#2980b9">POST</span> `/projects/{projectId}/testimonials` - Crear testimonio de texto
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/testimonials`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/testimonials`
+- <span style="color:#2980b9">POST</span> `/api/cloudinary/upload` - Subir foto de avatar (si se sube imagen)
+  - <span style="color:#e67e22">URL Completa:</span> `/api/cloudinary/upload` (relativa) o `https://tu-dominio.com/api/cloudinary/upload` (absoluta)
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://tu-dominio.com/api/cloudinary/upload`
+- <span style="color:#27ae60">GET</span> `/projects/{projectId}` - Obtener datos del proyecto (desde useProject hook)
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123`
 
 ---
 
@@ -284,18 +287,18 @@ Este documento lista todas las rutas de la aplicación, las páginas correspondi
 
 **Endpoints:**
 
-- `POST /projects/{projectId}/testimonials` - Crear testimonio de imagen
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/testimonials`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/testimonials`
-- `POST /api/cloudinary/upload` - Subir imagen del testimonio
-  - **URL Completa:** `/api/cloudinary/upload` (relativa) o `https://tu-dominio.com/api/cloudinary/upload` (absoluta)
-  - **Ejemplo:** `https://tu-dominio.com/api/cloudinary/upload`
-- `POST /api/cloudinary/upload` - Subir foto de avatar (si se sube imagen)
-  - **URL Completa:** `/api/cloudinary/upload` (relativa) o `https://tu-dominio.com/api/cloudinary/upload` (absoluta)
-  - **Ejemplo:** `https://tu-dominio.com/api/cloudinary/upload`
-- `GET /projects/{projectId}` - Obtener datos del proyecto (desde useProject hook)
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123`
+- <span style="color:#2980b9">POST</span> `/projects/{projectId}/testimonials` - Crear testimonio de imagen
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/testimonials`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/testimonials`
+- <span style="color:#2980b9">POST</span> `/api/cloudinary/upload` - Subir imagen del testimonio
+  - <span style="color:#e67e22">URL Completa:</span> `/api/cloudinary/upload` (relativa) o `https://tu-dominio.com/api/cloudinary/upload` (absoluta)
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://tu-dominio.com/api/cloudinary/upload`
+- <span style="color:#2980b9">POST</span> `/api/cloudinary/upload` - Subir foto de avatar (si se sube imagen)
+  - <span style="color:#e67e22">URL Completa:</span> `/api/cloudinary/upload` (relativa) o `https://tu-dominio.com/api/cloudinary/upload` (absoluta)
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://tu-dominio.com/api/cloudinary/upload`
+- <span style="color:#27ae60">GET</span> `/projects/{projectId}` - Obtener datos del proyecto (desde useProject hook)
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123`
 
 ---
 
@@ -306,19 +309,19 @@ Este documento lista todas las rutas de la aplicación, las páginas correspondi
 
 **Endpoints:**
 
-- `POST /projects/{projectId}/testimonials` - Crear testimonio de video
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/testimonials`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/testimonials`
-- `POST /api/cloudinary/upload` - Subir foto de avatar (si se sube imagen)
-  - **URL Completa:** `/api/cloudinary/upload` (relativa) o `https://tu-dominio.com/api/cloudinary/upload` (absoluta)
-  - **Ejemplo:** `https://tu-dominio.com/api/cloudinary/upload`
-- `GET /projects/{projectId}` - Obtener datos del proyecto (desde useProject hook)
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123`
+- <span style="color:#2980b9">POST</span> `/projects/{projectId}/testimonials` - Crear testimonio de video
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}/testimonials`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123/testimonials`
+- <span style="color:#2980b9">POST</span> `/api/cloudinary/upload` - Subir foto de avatar (si se sube imagen)
+  - <span style="color:#e67e22">URL Completa:</span> `/api/cloudinary/upload` (relativa) o `https://tu-dominio.com/api/cloudinary/upload` (absoluta)
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://tu-dominio.com/api/cloudinary/upload`
+- <span style="color:#27ae60">GET</span> `/projects/{projectId}` - Obtener datos del proyecto (desde useProject hook)
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123`
 
 ---
 
-## Formularios Públicos
+## 📝 <span style="color:#27ae60">Formularios Públicos</span>
 
 ### `/cf/[formId]`
 
@@ -327,19 +330,19 @@ Este documento lista todas las rutas de la aplicación, las páginas correspondi
 
 **Endpoints:**
 
-- `GET /public/capture-forms/{formId}` - Obtener formulario público (no implementado, usa configuración mock)
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/public/capture-forms/{formId}`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/public/capture-forms/form_ejemplo123`
-- `POST /public/capture-forms/{formId}/responses` - Enviar respuesta del formulario (no implementado completamente)
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/public/capture-forms/{formId}/responses`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/public/capture-forms/form_ejemplo123/responses`
-- `POST /api/cloudinary/upload` - Subir foto de avatar (si se sube imagen)
-  - **URL Completa:** `/api/cloudinary/upload` (relativa) o `https://tu-dominio.com/api/cloudinary/upload` (absoluta)
-  - **Ejemplo:** `https://tu-dominio.com/api/cloudinary/upload`
+- <span style="color:#27ae60">GET</span> `/public/capture-forms/{formId}` - Obtener formulario público (no implementado, usa configuración mock)
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/public/capture-forms/{formId}`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/public/capture-forms/form_ejemplo123`
+- <span style="color:#2980b9">POST</span> `/public/capture-forms/{formId}/responses` - Enviar respuesta del formulario (no implementado completamente)
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/public/capture-forms/{formId}/responses`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/public/capture-forms/form_ejemplo123/responses`
+- <span style="color:#2980b9">POST</span> `/api/cloudinary/upload` - Subir foto de avatar (si se sube imagen)
+  - <span style="color:#e67e22">URL Completa:</span> `/api/cloudinary/upload` (relativa) o `https://tu-dominio.com/api/cloudinary/upload` (absoluta)
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://tu-dominio.com/api/cloudinary/upload`
 
 ---
 
-## Embeds Públicos
+## 📺 <span style="color:#e74c3c">Embeds Públicos</span>
 
 ### `/embed`
 
@@ -348,13 +351,13 @@ Este documento lista todas las rutas de la aplicación, las páginas correspondi
 
 **Endpoints:**
 
-- `GET /public/projects/{projectId}/testimonials` - Obtener testimonios aprobados para mostrar en el embed
-  - **URL Completa:** `https://ejemplo-dominio.com/api/projects/{projectId_path}/testimonials`
-  - **Ejemplo:** `https://ejemplo-dominio.com/api/projects/proj_ejemplo123/testimonials?status=approved&limit=20`
+- <span style="color:#27ae60">GET</span> `/public/projects/{projectId}/testimonials` - Obtener testimonios aprobados para mostrar en el embed
+  - <span style="color:#e67e22">URL Completa:</span> `https://ejemplo-dominio.com/api/projects/{projectId_path}/testimonials`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-dominio.com/api/projects/proj_ejemplo123/testimonials?status=approved&limit=20`
 
 ---
 
-## Marketing
+## 📣 <span style="color:#f39c12">Marketing</span>
 
 ### `/`
 
@@ -363,7 +366,7 @@ Este documento lista todas las rutas de la aplicación, las páginas correspondi
 
 **Endpoints:**
 
-- Ninguno (página estática)
+- <span style="color:#7f8c8d">Ninguno (página estática)</span>
 
 ---
 
@@ -374,11 +377,11 @@ Este documento lista todas las rutas de la aplicación, las páginas correspondi
 
 **Endpoints:**
 
-- Ninguno (página estática)
+- <span style="color:#7f8c8d">Ninguno (página estática)</span>
 
 ---
 
-## Hooks y Contextos
+## 🧩 <span style="color:#16a085">Hooks y Contextos</span>
 
 ### `useProject` Hook
 
@@ -386,9 +389,9 @@ Este documento lista todas las rutas de la aplicación, las páginas correspondi
 
 **Endpoints:**
 
-- `GET /projects/{projectId}` - Obtener datos del proyecto
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123`
+- <span style="color:#27ae60">GET</span> `/projects/{projectId}` - Obtener datos del proyecto
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/projects/{projectId_path}`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/projects/proj_ejemplo123`
 
 ---
 
@@ -398,22 +401,22 @@ Este documento lista todas las rutas de la aplicación, las páginas correspondi
 
 **Endpoints:**
 
-- `GET /auth/user` - Obtener datos del usuario autenticado
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/auth/user`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/auth/user`
-- `POST /auth/signup` - Registrar nuevo usuario
-  - **URL Completa:** `{SUPABASE_EDGE_FUNCTION_URL}/auth/signup`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/auth/signup`
-- `POST /auth/login` (Supabase Auth) - Iniciar sesión
-  - **URL Completa:** `https://{projectId}.supabase.co/auth/v1/token?grant_type=password`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/auth/v1/token?grant_type=password`
-- `POST /auth/logout` (Supabase Auth) - Cerrar sesión
-  - **URL Completa:** `https://{projectId}.supabase.co/auth/v1/logout`
-  - **Ejemplo:** `https://ejemplo-proyecto-id.supabase.co/auth/v1/logout`
+- <span style="color:#27ae60">GET</span> `/auth/user` - Obtener datos del usuario autenticado
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/auth/user`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/auth/user`
+- <span style="color:#2980b9">POST</span> `/auth/signup` - Registrar nuevo usuario
+  - <span style="color:#e67e22">URL Completa:</span> `{SUPABASE_EDGE_FUNCTION_URL}/auth/signup`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/functions/v1/ejemplo-edge-function/auth/signup`
+- <span style="color:#2980b9">POST</span> `/auth/login` (Supabase Auth) - Iniciar sesión
+  - <span style="color:#e67e22">URL Completa:</span> `https://{projectId}.supabase.co/auth/v1/token?grant_type=password`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/auth/v1/token?grant_type=password`
+- <span style="color:#2980b9">POST</span> `/auth/logout` (Supabase Auth) - Cerrar sesión
+  - <span style="color:#e67e22">URL Completa:</span> `https://{projectId}.supabase.co/auth/v1/logout`
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://ejemplo-proyecto-id.supabase.co/auth/v1/logout`
 
 ---
 
-## API Routes (Next.js)
+## ⚙️ <span style="color:#c0392b">API Routes (Next.js)</span>
 
 ### `/api/cloudinary/upload`
 
@@ -421,9 +424,9 @@ Este documento lista todas las rutas de la aplicación, las páginas correspondi
 
 **Endpoints:**
 
-- Endpoint interno de Next.js para subir archivos a Cloudinary
-  - **URL Completa:** `/api/cloudinary/upload` (relativa) o `https://tu-dominio.com/api/cloudinary/upload` (absoluta)
-  - **Ejemplo:** `https://tu-dominio.com/api/cloudinary/upload`
+- <span style="color:#2980b9">POST</span> Endpoint interno de Next.js para subir archivos a Cloudinary
+  - <span style="color:#e67e22">URL Completa:</span> `/api/cloudinary/upload` (relativa) o `https://tu-dominio.com/api/cloudinary/upload` (absoluta)
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://tu-dominio.com/api/cloudinary/upload`
 
 ---
 
@@ -433,13 +436,13 @@ Este documento lista todas las rutas de la aplicación, las páginas correspondi
 
 **Endpoints:**
 
-- Endpoint interno de Next.js para eliminar archivos de Cloudinary
-  - **URL Completa:** `/api/cloudinary/delete` (relativa) o `https://tu-dominio.com/api/cloudinary/delete` (absoluta)
-  - **Ejemplo:** `https://tu-dominio.com/api/cloudinary/delete`
+- <span style="color:#2980b9">POST</span> Endpoint interno de Next.js para eliminar archivos de Cloudinary
+  - <span style="color:#e67e22">URL Completa:</span> `/api/cloudinary/delete` (relativa) o `https://tu-dominio.com/api/cloudinary/delete` (absoluta)
+  - <span style="color:#2ecc71">Ejemplo:</span> `https://tu-dominio.com/api/cloudinary/delete`
 
 ---
 
-## Notas
+## 🗒️ <span style="color:#7f8c8d">Notas</span>
 
 1. **Variables en las URLs:**
 
