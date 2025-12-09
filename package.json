@@ -35,6 +35,8 @@
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
     "eslint-config-next": "16.0.3",
+    "eslint-formatter-html": "^2.7.3",
+    "eslint-formatter-table": "^7.32.1",
     "tailwindcss": "^4.1.17",
     "typescript": "^5"
   }
